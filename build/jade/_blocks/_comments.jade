@@ -1,0 +1,22 @@
+//block comments
+section.comments 
+	h3.comments__title Добавить комментарий
+	//block sign-in
+	.sign-in
+		p.sign-in__label Войти:
+		button.sign-in__button(type="button", title="http://facebook.com") Facebook
+		button.sign-in__button(type="button", title="http://vk.com") Вконтакте
+		button.sign-in__button(type="button", title="http://twitter.com") Twitter
+		button.sign-in__button(type="button", title="http://https://plus.google.com") Google+
+	//end sign-in
+
+	//block add-comment
+	.add-comment
+		ul.add-comment__menu
+			li.add-comment__item: a.add-comment__link(href="", title="Поделиться")
+			li.add-comment__item: a.add-comment__link(href="", title="Прикрепить")
+			li.add-comment__item: a.add-comment__link(href="", title="Подписаться") Подписка на комментарии
+		form#addCommForm.add-comment__form(action="#", method="GET", name="addComment")
+			textarea.add-comment__area(name="usercomment", rows="5", cols="60", required)
+			input.add-comment__submit(type="submit", value="Отправить") 
+//end block comments

@@ -1,0 +1,41 @@
+//block page-header
+header.page-header
+	.header-wrapper
+		//block user interations
+		section.user-interactions
+
+			//block social icons
+			div.socials-header
+				a.socials-header__link(href="https://www.facebook.com/nogibogicomua", target="_blank", title="www.facebook.com/nogibogicomua")
+				a.socials-header__link(href="https://vk.com/nogibogi", target="_blank", title="vk.com/nogibogi")
+				a.socials-header__link(href="https://twitter.com/", target="_blank", title="twitter.com/")
+			//end block social icons
+
+			//block article-logo
+			a.article-logo(href="http://nogibogi.com/", title="http://nogibogi.com/")
+			//end block article-logo
+
+			//block interactions
+			.interactions
+				a.interactions__lang-switcher(href="#") Українською
+				button.interactions__sign-in(type="button", value="Вход") Вход 
+		//end block user-interations
+		
+		//block main-menu
+		section.main-menu
+			//button
+			button.mobile-menu-toggle#toggleMenu
+
+			+mainNav([
+				{ 'class': 'top-menu__link top-menu__link--current', 'title': 'Тренировки', 'link': 'http://nogibogi.com/category/training/' },
+				{ 'class': 'top-menu__link', 'title': 'Питание', 'link': 'http://nogibogi.com/category/nutrition/' },
+				{ 'class': 'top-menu__link', 'title': 'Экипировка', 'link': 'http://nogibogi.com/category/equipment/' },
+				{ 'class': 'top-menu__link', 'title': 'Триатлон', 'link': 'http://nogibogi.com/category/triathlon/' },
+				{ 'class': 'top-menu__link top-menu__link--isIcon', 'title': 'Календарь', 'link': '#' }
+			])
+
+			//block search
+			form#searchForm.header-seach-form(action="#", method="GET")
+				input#searchQ.header-seach-form__searchbox(name="search-query", type="text", required)
+				button.header-seach-form__submit-button(type="submit", title="Поиск")
+//end block page-header

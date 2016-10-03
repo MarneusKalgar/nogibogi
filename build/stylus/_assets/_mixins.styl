@@ -1,0 +1,59 @@
+/*this mixin adds icons to social links and buttons*/
+addIconFont( code, posTop, posLeft)
+	content code
+	position absolute
+	top posTop
+	left posLeft
+	font $iconFont 
+	speak none
+	font-variant normal
+	text-transform none
+	-webkit-font-smoothing antialiased
+	-moz-osx-font-smoothing grayscale
+
+
+/*this mixin adds bg colour to social buttons*/
+addBtnColour(child, colour)
+	&:nth-child({child})
+		background-color colour
+		&:hover
+		&:focus
+			background-color darken(colour, 20%)
+		&:active
+			background-color darken(colour, 20%)
+			box-shadow inset 0 0 .3em .1em rgba(#000,.5)
+			
+
+/*animItems()
+	@keyframes iconChg
+		0% 
+			opacity 1
+		50% 
+			opacity 0
+		51%
+			background-position 0 0
+		100%
+			background-position -1.85em 0
+	*/
+
+/*This mixin adds semitransparent bg to Interest-to-read articles*/
+addInterestSemiBg(childNum, color)
+	.interest-to-read__article:nth-child({childNum})
+		&:hover
+		&:active
+			.interest-to-read__content:before
+				background-color color
+		+below(66em)
+			.interest-to-read__content:before
+				background-color color
+
+/*This mixin adds semitransparent bg to Front page articles*/
+addFrontSemiBg(childNum, color)
+	.front-page__article:nth-child({childNum})
+		&:hover
+		&:active
+			.front-page__content:before
+				background-color color
+		+below(66em)
+			.front-page__content:before
+				background-color color

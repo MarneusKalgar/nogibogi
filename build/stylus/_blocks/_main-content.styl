@@ -1,0 +1,870 @@
+.main-content
+	width 100%
+	font-family $articleMainFont
+	font-size 1rem
+	color $plainTextClr
+	overflow hidden
+
+
+/*********************************************************/
+/*                main-content Header styles
+/*********************************************************/
+.main-content__header
+	position relative
+	hyphens none
+	height 39.25rem
+	+below(66em)
+		height 35.125rem
+	+below(37em)
+		height 23.625rem
+	+above(91.5em)
+		height 42.625rem
+	+above(98.75em)
+		height 48.625rem
+	
+.main-content__header-bg
+	position absolute
+	size 100%
+	top 0
+	left 0
+	background #4a5634 url('../img/_main-content/main-content__header-bg-1440.jpg') right bottom no-repeat
+	background-size cover
+	+below(66em)
+		background-image url('../img/_main-content/main-content__header-bg-1100.jpg')
+	+below(37em)
+		background-image url('../img/_main-content/main-content__header-bg-700.jpg')
+
+.main-content__header-wrapper
+	position absolute
+	top 55%
+	left 0
+	width 100%
+	+below(37em)
+		top 45%
+	+below(29em)
+		top 25%
+
+
+/*********************************************************/
+/*               block about-article styles
+/*********************************************************/
+.about-article
+	display(flex)
+	flex-direction(normal)
+	flex-direction(row)
+	flex-wrap(wrap)
+	justify-content(center)
+	align-content(center)
+	position relative
+	+below(47em)
+		font-size .9em
+	+below(29em)
+		width 100%
+		font-size .7em
+	
+	&__info
+		display block
+		position relative
+		size auto 1em
+		line-height 1em
+		margin 0 5% 0 0
+		color $textLightClr
+		font-size 1rem
+		letter-spacing .04em
+		text-overflow ellipsis
+		&:first-child
+			margin-right 3.5%
+			+below(37em)
+				margin-right 1.5em
+		&:last-child
+			margin-right 0
+		+below(37em)
+			margin-right 1.7em
+		+below(29em)
+			font-size 0.8rem
+			margin-right 1.5em
+			
+		&--isIcon
+			position relative
+			height 1em
+			&:before
+				content ''
+				position absolute
+				top -.1em
+				left -1.2em
+				size 1em 1em
+				background-image url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhcGFfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1OS4yIDU5LjIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDU5LjIgNTkuMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+LnN0MHtmaWxsOiNGRkZGRkY7fTwvc3R5bGU+PGc+PHBhdGggY2xhc3M9InN0MCIgZD0iTTUxLjEsMjEuNmMtNS44LTUuOC0xMy40LTguOS0yMS42LTguOXMtMTUuOCwzLjItMjEuNiw4LjlMMCwyOS41bDguMSw4LjFjNS44LDUuOCwxMy40LDguOSwyMS42LDguOXMxNS44LTMuMiwyMS42LTguOWw3LjktNy45TDUxLjEsMjEuNnogTTQ5LjgsMzYuMmMtNS40LDUuNC0xMi41LDguMy0yMC4xLDguM3MtMTQuOC0zLTIwLjEtOC4zbC02LjctNi43TDkuNCwyM2M1LjQtNS40LDEyLjUtOC4zLDIwLjEtOC4zczE0LjgsMywyMC4xLDguM2w2LjcsNi43TDQ5LjgsMzYuMnoiLz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMjkuNiwxNi42Yy03LjIsMC0xMyw1LjgtMTMsMTNzNS44LDEzLDEzLDEzczEzLTUuOCwxMy0xM1MzNi43LDE2LjYsMjkuNiwxNi42eiBNMjkuNiwyNC42Yy0yLjgsMC01LDIuMi01LDVjMCwwLjYtMC40LDEtMSwxcy0xLTAuNC0xLTFjMC0zLjksMy4xLTcsNy03YzAuNiwwLDEsMC40LDEsMVMzMC4xLDI0LjYsMjkuNiwyNC42eiIvPjwvZz48L3N2Zz4=')
+				background-size cover
+
+/*********************************************************/		
+/*         element main-content__title styles    
+/*********************************************************/		
+.main-content__title
+	position relative
+	width 50rem
+	margin 2.1% auto 0
+	font 3.2em / 1.2 $mainTitleFont
+	letter-spacing 0.03em
+	color $textLightClr
+	text-align center
+	white-space pre-wrap
+	overflow hidden
+	//text-overflow ellipsis
+	+below(66em)
+		width 42.72rem
+		font-size 2.5em
+	+below(47em)
+		width 33.9rem
+		font-size 2.2em
+	+below(37em)
+		width 27.9rem
+		font-size 1.8em
+	+below(29em)
+		width 85%
+		font-size 1.5em
+		
+
+/*********************************************************/
+/*               block main-socials styles
+/*********************************************************/
+.main-socials
+	position relative
+	display(flex)
+	flex-direction(normal)
+	flex-direction(row)
+	flex-wrap(wrap)
+	justify-content(center)
+	align-content(stretch)
+	margin 3.33% auto 0
+	padding-bottom 3.33%
+	+below(29em)
+		flex-direction(column)
+		align-items(center)
+		margin .8em auto 0
+		width auto
+
+	&--bottom /*modifier --bottom*/
+		position relative
+		z-index 1
+		height 6.25em
+		margin-top 9.333%
+		padding-bottom 0
+		+below(38em)
+			width 8rem
+			height 14rem
+			flex-direction(column)
+			align-items(center)
+		.main-socials__link		
+			+below(38em)
+				margin 1em 0 0	
+		&:before
+			position absolute
+			content ''
+			z-index -1
+			top 0
+			left -35rem
+			width 285%
+			height 100%
+			background #fff url('../img/_main-content/main-content__main-socials-bg.png') 0 0 no-repeat
+			+below(66em)
+				display none
+			/*end modifier --bottom*/
+
+	&__meter
+		margin-left 2.5em
+		+below(66em)
+			margin-left (@margin-left*0.6)
+		+below(37em)
+			margin-left (@margin-left*0.5)
+			
+	&__link
+		display block
+		position relative
+		box-sizing border-box
+		margin-right 1.45em
+		padding-left 3.3em
+		width 10.714em
+		height 3em
+		border-radius 2em
+		font-size 0.875em
+		line-height @height		
+		text-align left
+		color $textLightClr
+		text-decoration none
+		&:last-child
+			margin-right 0
+		&:active
+		&:hover
+			cursor pointer
+		&:focus
+			outline none
+		&:nth-child(1):before
+			addIconFont( '\e801', 30%, 13% )
+			font-size 1.2em
+		&:nth-child(2):before
+			addIconFont( '\e803', 33%, 13% )
+			font-size 1em
+		&:nth-child(3)
+			&:before
+				addIconFont( '\e802', 30%, 10% )
+				font-size 1.2em
+		+below(66em)
+			width (@width*0.8)
+			padding-left (@padding-left*0.9)
+		+below(37em)
+			margin 1em .8em 0 0
+			height (@height*0.9)
+			line-height @height
+		+below(29em)
+			margin .8em 0 0
+
+		&--transparent /*modifier --transparent*/
+			background-color rgba($transpSocClr,.4)
+			transition all 0.3s ease 0.1s
+			&:hover
+			&:focus
+				background-color rgba($transpSocClr,.7)
+			&:active
+				background-color rgba($transpSocClr,.7)
+				box-shadow inset 0 0 0.3em 0.1em rgba(#000,.5)
+				/*end modifier --transparent*/
+
+		&--colour /*modifier --colour*/
+			position relative
+			transition all 0.3s ease 0.1s
+			addBtnColour(1, $fsbBtnClr)
+			addBtnColour(2, $tweetBtnClr)
+			addBtnColour(3, $vkBtnClr)
+			addBtnColour(4, #a8acb9)	
+			&:nth-child(4)
+				padding-left 1.2em
+				background-color #a8acb9
+				.main-socials__meter
+					margin-left 3.5em
+					+below(66em)
+						margin-left 1.7em
+			/*end modifier --colour*/
+
+
+/*********************************************************/
+/*            main part of block main-content styles
+/*********************************************************/
+.advertisings
+	width 62rem
+	height 5.625rem
+	margin 3.4722222% auto 0
+	&__pic
+		display block
+		width 100%
+		max-width 100%
+		height 100%
+	+below(66em)
+		display none
+
+
+/*********************************************************/		
+/*         element main-content__story styles    
+/*********************************************************/
+.main-content__story
+	box-sizing border-box
+	width 46.875rem
+	margin 3.472% auto 0
+	padding 0 1.5rem
+	&:last-child
+		margin-top 0
+	+below(66em)
+		width (43.75em)
+	+below(47em)
+		width 100%
+		padding 1.25rem
+	+above(98.75em)
+		width 50rem
+
+
+/*********************************************************/		
+/*         element main-content__preface styles    
+/*********************************************************/
+.main-content__preface
+	margin 0 0 7.143%
+	font 1.6em / 1.5 $prefaceFont
+	letter-spacing 0.02em
+	word-wrap break-word
+	white-space pre-wrap
+	word-break normal
+	+below(66em)
+		font-size 1.3em
+	+below(47em)
+		font-size 1.2em
+
+
+/*********************************************************/		
+/*         element main-content__subtitle styles    
+/*********************************************************/
+.main-content__subtitle
+	margin 6.285% 0 0
+	font-family $mainTitleFont
+	font-size 2.2em
+	+below(66em)
+		font-size 1.7em
+	+below(47em)
+		font-size 1.5em
+
+
+/*********************************************************/		
+/*         element main-content__report styles    
+/*********************************************************/
+.main-content__report
+	margin 1.1em 0 0
+	font-size 1.3em
+	line-height 1.5
+	+below(47em)
+		font-size 1.1em
+
+
+/*********************************************************/		
+/*         element main-content__ext-link styles    
+/*********************************************************/	
+.main-content__ext-link
+	color $extLinkClr
+	text-decoration-color rgba($extLinkClr, .3)
+	text-shadow 0 0 .02em lighten($extLinkClr, 70%)
+	transition all 0.3s ease 0.1s
+	&:hover
+	&:focus
+	&:active
+		color $hoverClr
+		text-decoration-color rgba($hoverClr, .3)
+		text-shadow 0 0 .02em lighten($hoverClr, 70%)
+
+
+/*********************************************************/		
+/*         block .advertisings-container-right styles    
+/*********************************************************/
+.advertisings-container-right
+	width 40%
+	height 35%
+	float right
+	margin 4% -18% 5% 4.6%
+	&__info
+		margin-left 43%
+	&__link
+		display inline-block
+		font-size 0.875em
+		color $imgCaptionTextClr
+		text-align center
+	+below(66em)
+		display none
+
+
+/*********************************************************/		
+/*         block race-landscape styles    
+/*********************************************************/
+.race-landscape
+	width 100%
+	margin 4.72222222% 0 2%
+	&__pic
+		display block
+		width 100%
+		height auto
+	&__description
+		box-sizing border-box
+		width 46.875rem
+		margin 1.4% auto 0
+		padding 0 1.7%
+		color $imgCaptionTextClr
+		font-size 0.875em
+		line-height 1.8
+		+below(66em)
+			width (43.75rem)
+		+below(47em)
+			width 100%
+			padding 1.25rem
+			padding-bottom 0
+
+
+/*********************************************************/		
+/*         element main-content__important etc styles    
+/*********************************************************/	
+.main-content__important
+	position relative
+	margin 8.57% auto 0
+	padding-bottom 2.857%
+	
+.main-content__important-text
+	margin 0
+	font 1.75em / 1.5 $importantFragmentFont
+	+below(47em)
+		font-size 1.4em
+	+below(29em)
+		font-size 1.2em
+
+.main-content__important-action:first-child
+	display block
+	position absolute
+	top 30%
+	left -16%
+	size 3.0rem 3.25rem
+	background url('data:image/svg+xml;base64,PHN2ZyBpZD0i0KHQu9C+0LlfMSIgZGF0YS1uYW1lPSLQodC70L7QuSAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNS43NCA1MS41NSI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiNiZDRlNDU7ZmlsbC1ydWxlOmV2ZW5vZGQ7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5tYWluLWNvbnRlbnRfX2ltcG9ydGFudC1hY3Rpb24tLXRvcC1zPC90aXRsZT48ZyBpZD0iU2hhcGVfMTgiIGRhdGEtbmFtZT0iU2hhcGUgMTgiPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTM1LjUxLDE0LjMyYTEuMTEsMS4xMSwwLDAsMCwuMi0wLjk1TDMyLjU5LDAuODRBMS4xMSwxLjExLDAsMCwwLDMxLjgxLDBhMS4xMiwxLjEyLDAsMCwwLTEuMDguMjlMMTEuOTIsMTkuMTRhMS4xMSwxLjExLDAsMCwwLDAsMS41N2wyLjM1LDIuMzUtMy4xNCwzLjE0TDguNzgsMjMuODRhMS4xMSwxLjExLDAsMCwwLTEuNTcsMEw0LjQ4LDI2LjU5Yy01LjY3LDUuNjctNiwxNC44NC0uNzIsMjAuNDRhMTQuMzksMTQuMzksMCwwLDAsMjAuNjcuMywxNC40OSwxNC40OSwwLDAsMCwyLTE3LjkzLDMuMjIsMy4yMiwwLDAsMSwuMjUtMy42OVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMCkiLz48L2c+PC9zdmc+') right 0 no-repeat
+	background-size contain
+	cursor pointer
+	+below(66em)
+		display none
+	&:hover
+		background-image url('data:image/svg+xml;base64,PHN2ZyBpZD0i0KHQu9C+0LlfMSIgZGF0YS1uYW1lPSLQodC70L7QuSAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NC44IDUxLjU1Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2Q0Njk0Yzt9LmNscy0ye2ZpbGw6I2JkNGU0NTt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPm1haW4tY29udGVudF9faW1wb3J0YW50LWFjdGlvbi0tdG9wLWhvdmVyZWQ8L3RpdGxlPjxnIGlkPSJTaGFwZV8xOCIgZGF0YS1uYW1lPSJTaGFwZSAxOCI+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNODAuMDYsOC4zNmExLjY2LDEuNjYsMCwwLDAtMi4zNSwyLjM1bDUuNjIsNS42MkExLjY2LDEuNjYsMCwwLDAsODUuNjgsMTRabTAuOTUsMTFMNzMuOTQsMTlhMS42NiwxLjY2LDAsMCwwLS4xNiwzLjMybDcuMDYsMC4zMkExLjY2LDEuNjYsMCwwLDAsODEsMTkuMzNaTTkxLjY3LDQuNDRhMS42NiwxLjY2LDAsMCwwLTMuMzIuMTZsMC4zMiw3LjA2QTEuNjYsMS42NiwwLDAsMCw5MiwxMS41WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTcyLjIgMCkiLz48L2c+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNOTUuMjcsNTEuNTVhMTQuMzIsMTQuMzIsMCwwLDAsMTAuNC00LjIzLDE0LjQ5LDE0LjQ5LDAsMCwwLDItMTcuOTMsMy4yMiwzLjIyLDAsMCwxLC4yNS0zLjY5bDguODYtMTEuMzhhMS4xMSwxLjExLDAsMCwwLC4yLTAuOTVMMTEzLjg1LDAuODRhMS4xMSwxLjExLDAsMCwwLS43OC0wLjhBMS4xMiwxLjEyLDAsMCwwLDExMiwuMzNMOTMuMTcsMTkuMTRhMS4xMSwxLjExLDAsMCwwLDAsMS41N2wyLjM1LDIuMzUtMy4xNCwzLjE0TDkwLDIzLjg0YTEuMTEsMS4xMSwwLDAsMC0xLjU3LDBsLTIuNzQsMi43NGMtNS42Nyw1LjY3LTYsMTQuODQtLjcyLDIwLjQ0YTE0LjI3LDE0LjI3LDAsMCwwLDEwLjI3LDQuNTIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03Mi4yIDApIi8+PC9zdmc+')
+		background-size contain
+		
+.main-content__important-action:last-child
+	display block
+	position absolute
+	size 2.9rem 3.25rem
+	top 30%
+	right -16%
+	background url('data:image/svg+xml;base64,PHN2ZyBpZD0i0KHQu9C+0LlfMSIgZGF0YS1uYW1lPSLQodC70L7QuSAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNS43NCA1MS41NSI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiNiZDRlNDU7ZmlsbC1ydWxlOmV2ZW5vZGQ7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5tYWluLWNvbnRlbnRfX2ltcG9ydGFudC1hY3Rpb24tLWJvdHRvbS1zPC90aXRsZT48ZyBpZD0iU2hhcGVfMTgiIGRhdGEtbmFtZT0iU2hhcGUgMTgiPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTgxLjQ5LDM3LjI0YTEuMTEsMS4xMSwwLDAsMC0uMi45NWwzLjEyLDEyLjUzYTEuMSwxLjEsMCwwLDAsMS44Ni41MWwxOC44MS0xOC44MWExLjExLDEuMTEsMCwwLDAsMC0xLjU3bC0yLjM1LTIuMzUsMy4xNC0zLjE0LDIuMzUsMi4zNWExLjExLDEuMTEsMCwwLDAsMS41NywwTDExMi41MiwyNWM1LjY3LTUuNjcsNi0xNC44NC43Mi0yMC40NGExNC4zOSwxNC4zOSwwLDAsMC0yMC42Ny0uMywxNC40OSwxNC40OSwwLDAsMC0yLDE3LjkzLDMuMjIsMy4yMiwwLDAsMS0uMjUsMy42OVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC04MS4yNiAwKSIvPjwvZz48L3N2Zz4=') left 0 no-repeat
+	background-size contain
+	cursor pointer
+	+below(66em)
+		display none
+	&:hover
+		background-image url('data:image/svg+xml;base64,PHN2ZyBpZD0i0KHQu9C+0LlfMSIgZGF0YS1uYW1lPSLQodC70L7QuSAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NC44IDUxLjU1Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2Q0Njk0Yzt9LmNscy0ye2ZpbGw6I2JkNGU0NTt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPm1haW4tY29udGVudF9faW1wb3J0YW50LWFjdGlvbi0tYm90dG9tLWhvdmVyZWQ8L3RpdGxlPjxnIGlkPSJTaGFwZV8xOCIgZGF0YS1uYW1lPSJTaGFwZSAxOCI+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMzYuOTQsNDMuMTlhMS42NiwxLjY2LDAsMCwwLDIuMzUtMi4zNWwtNS42Mi01LjYyYTEuNjYsMS42NiwwLDAsMC0yLjM1LDIuMzVaTTM2LDMyLjIybDcuMDYsMC4zMmExLjY2LDEuNjYsMCwwLDAsLjE2LTMuMzJsLTcuMDYtLjMyQTEuNjYsMS42NiwwLDAsMCwzNiwzMi4yMlpNMjUuMzMsNDcuMTFBMS42NiwxLjY2LDAsMCwwLDI4LjY1LDQ3bC0wLjMyLTcuMDZBMS42NiwxLjY2LDAsMCwwLDI1LDQwWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAwKSIvPjwvZz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0yMS43MywwYTE0LjMyLDE0LjMyLDAsMCwwLTEwLjQsNC4yMywxNC40OSwxNC40OSwwLDAsMC0yLDE3LjkzLDMuMjIsMy4yMiwwLDAsMS0uMjUsMy42OUwwLjIzLDM3LjIzYTEuMTEsMS4xMSwwLDAsMC0uMi45NUwzLjE1LDUwLjcxQTEuMSwxLjEsMCwwLDAsNSw1MS4yMkwyMy44MywzMi40MWExLjExLDEuMTEsMCwwLDAsMC0xLjU3TDIxLjQ4LDI4LjVsMy4xNC0zLjE0TDI3LDI3LjcxYTEuMTEsMS4xMSwwLDAsMCwxLjU3LDBMMzEuMjcsMjVjNS42Ny01LjY3LDYtMTQuODQuNzItMjAuNDRBMTQuMjcsMTQuMjcsMCwwLDAsMjEuNzMsMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAwKSIvPjwvc3ZnPg==')
+		background-size contain
+
+/*********************************************************/		
+/*         block advertisings-container-left styles    
+/*********************************************************/	
+.advertisings-container-left
+	width 40%
+	height 85%
+	float left
+	margin 3% 7.5% 6.2rem -18%
+	&__info
+		margin-left 40%
+	&__link
+		display inline-block
+		font-size 0.875em
+		color $imgCaptionTextClr
+		text-align center
+	+below(66em)
+		display none
+
+
+/*********************************************************/		
+/*         block race-slider styles    
+/*********************************************************/	
+.race-slider
+	width 62.5rem
+	margin 4.72222222% auto 0
+	position relative
+	+below(75em)
+		width 53.125rem
+	+below(66em)
+		width 43.75rem
+	+below(52em)
+		display none
+		
+	&__wrapper
+		width 100%
+		height 41.625rem
+		overflow hidden
+		position relative
+		+below(75em)
+			height 35.38125rem
+		+below(66em)
+			height 29.1375rem
+			
+	&__menu
+		position relative
+		margin 0
+		padding 0
+		height 100%
+		overflow hidden
+		
+	&__slide
+		display none
+		position absolute
+		top 0
+		left 0
+		width 100%
+		height 100%
+		list-style none
+		margin 0
+		padding 0
+		&--active
+			display block
+		
+	&__pic
+		display block
+		width 100%
+		min-width 100%
+		height auto
+		
+	&__description
+		height 2.625em
+		padding-bottom 1em
+		color $imgCaptionTextClr
+		
+	&__meter
+		display inline-block
+		margin 0
+		padding 0 0 0 .6em 
+		size 3.264em 1.667em
+		line-height 1.667em
+		font-size .9em
+		
+	&__num
+		display inline-block
+		width 0.5em
+		line-height 1.667em
+		&:first-child
+			margin 0 .25em 0 0
+	&__dev
+		display inline-block
+		margin-right .25em
+		line-height 1.667em
+	&__info
+		display inline-block
+		margin 1.25em 0 0 1.2em
+	
+	&__toggle
+		display block
+		position absolute
+		size 1.5625rem 3.125rem
+		top 40%
+		color #b4b9be
+		transition all 0.3s ease 0.1s
+		&:active
+		&:hover
+			color darken(@color, 40%)
+			cursor pointer
+		&:focus
+			outline none
+			color darken(@color, 40%)
+	
+	&__toggle--left	//modifier
+		left -2.8rem
+		&:before
+			addIconFont( '\e80c', 10%, 15% )
+			font-size 3em
+		
+	&__toggle--right //modifier
+		right -2.8rem
+		&:before
+			addIconFont( '\e80d', 10%, 15% )
+			font-size 3em
+
+.race-slider + .main-content__story
+	margin-top 0
+	
+
+/*********************************************************/
+/*         block read-on-topic styles
+/*********************************************************/
+.read-on-topic
+	display block
+	float left
+	position relative
+	width 19.0em
+	height 19.1em
+	margin 9% 4.2% 6% -20%
+	text-decoration none
+	color $plainTextClr
+	&:hover
+	&:active
+	&:focus
+		.read-on-topic__info
+			color $hvrArticleTextClr
+	+below(66em)
+		display none		
+
+	&__description
+		height 5.85em
+		margin-top -2%
+		
+	&__content
+		margin 0
+		border-radius 0 0 .5em .5em
+		font 1.1em $mainTitleFont
+		background-color #fbfbfa
+		
+	&__pic
+		width 100%
+		height auto
+		
+	&__view-meter
+		position absolute
+		display block
+		top 11.5em
+		left 2.5em
+		height .8rem
+		padding-left 1rem
+		line-height .8rem
+		font .9rem $articleMainFont
+		color $textLightClr
+		background url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhcGFfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1OS4yIDU5LjIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDU5LjIgNTkuMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+LnN0MHtmaWxsOiNGRkZGRkY7fTwvc3R5bGU+PGc+PHBhdGggY2xhc3M9InN0MCIgZD0iTTUxLjEsMjEuNmMtNS44LTUuOC0xMy40LTguOS0yMS42LTguOXMtMTUuOCwzLjItMjEuNiw4LjlMMCwyOS41bDguMSw4LjFjNS44LDUuOCwxMy40LDguOSwyMS42LDguOXMxNS44LTMuMiwyMS42LTguOWw3LjktNy45TDUxLjEsMjEuNnogTTQ5LjgsMzYuMmMtNS40LDUuNC0xMi41LDguMy0yMC4xLDguM3MtMTQuOC0zLTIwLjEtOC4zbC02LjctNi43TDkuNCwyM2M1LjQtNS40LDEyLjUtOC4zLDIwLjEtOC4zczE0LjgsMywyMC4xLDguM2w2LjcsNi43TDQ5LjgsMzYuMnoiLz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMjkuNiwxNi42Yy03LjIsMC0xMyw1LjgtMTMsMTNzNS44LDEzLDEzLDEzczEzLTUuOCwxMy0xM1MzNi43LDE2LjYsMjkuNiwxNi42eiBNMjkuNiwyNC42Yy0yLjgsMC01LDIuMi01LDVjMCwwLjYtMC40LDEtMSwxcy0xLTAuNC0xLTFjMC0zLjksMy4xLTcsNy03YzAuNiwwLDEsMC40LDEsMVMzMC4xLDI0LjYsMjkuNiwyNC42eiIvPjwvZz48L3N2Zz4=') 0 0 no-repeat
+			
+	&__call
+		position absolute
+		top 0
+		left 0
+		width 7em
+		height 1.5em
+		line-height @height
+		padding .4em 0 0 .5em
+		font 1rem $articleMainFont
+		color $textLightClr
+		background-color #e72236
+		
+	&__info
+		margin 0
+		padding 5.5%
+		border-radius 0 0 .5em .5em
+		hyphen auto
+		font-size 1.1em
+		line-height 1.3
+		transition color 0.3s ease 0.1s
+		word-wrap break-word
+		overflow hidden
+		text-overflow ellipsis
+
+
+/*********************************************************/
+/*          element main-content__rapture-info styles
+/*********************************************************/
+.main-content__rapture-info
+	position relative
+	z-index 1
+	height 5.96em
+	margin 9% auto 0
+	padding-bottom 5.14%
+	font 1.75em / 1.5 $mainTitleFont
+	color $plainTextClr
+	text-align center
+	letter-spacing 0.02em
+	+below(47em)
+		font-size 1.4em
+		width 100%
+		height auto
+	+below(29em)
+		font-size 1.15em
+		
+	&:before
+		position absolute
+		z-index -1
+		content ''
+		top 0
+		left -75%
+		width 250%
+		height 100%
+		background #fff url('../img/_main-content/main-content__rapture-info-bg.svg') center no-repeat
+		background-size contain		
+		+below(50em)
+			display none
+
+
+/*********************************************************/
+/*   element main-content__race-participants etc styles
+/*********************************************************/	
+.main-content__race-participants
+	margin 9.33333333% 0 0
+.main-content__race-participants-pic
+	display block
+	width 100%
+	min-width 100%
+	height auto
+.main-content__race-participants-description
+	margin-top 2.8%
+	padding-bottom 3.4%
+	color $imgCaptionTextClr
+
+
+.main-content__footer
+	margin-top .9%
+	
+
+/*********************************************************/
+/*          block authors-opinion styles
+/*********************************************************/
+.authors-opinion
+	box-sizing border-box
+	position relative
+	width 43.75rem
+	margin 0.8% auto 0
+	padding 1.6% 1.6% 1%
+	background-color #f7f7f9
+	border-radius 0.5em
+	:before
+		position absolute
+		content ''
+		size 7.8125rem
+		top 15%
+		left 3.5%
+		background #f7f7f9 url('../img/_main-content/authors-opinion__photo.png') 0 0 no-repeat
+		cursor default
+		+below(29em)
+			display none
+	+below(47em)
+		box-sizing border-box
+		width 97%
+		margin 1.5% auto 0
+		padding 1.25rem
+
+	&__title
+		margin 0 0 0 27.1428%
+		font 1.4em $mainTitleFont
+		+below(47em)
+			margin-left 8.5rem
+		+below(29em)
+			margin-left 0
+	&__description
+		margin 2.5% 0 2.5% 27.1428%
+		line-height 1.5
+		+below(47em)
+			margin-left 8.5rem
+		+below(29em)
+			margin-left 0
+	&__link
+		margin-left 27.1428%
+		color $extLinkClr
+		text-decoration-color rgba($extLinkClr, .3)
+		text-shadow 0 0 .02em lighten($extLinkClr, 70%)
+		transition all 0.3s ease 0.1s
+		&:hover
+		&:focus
+		&:active
+			color $hoverClr
+			text-decoration-color rgba($hoverClr, .3)
+			text-shadow 0 0 .02em lighten($hoverClr, 70%)
+		+below(47em)
+			margin-left 8.5rem
+		+below(29em)
+			margin-left 0
+
+
+/*********************************************************/
+/*          block subscription styles
+/*********************************************************/
+.subscription
+	height 13.3rem
+	margin-top 5.555%
+	text-align center
+	+below(29em)
+		height 15rem
+	
+	&__title
+		margin 0 0 1.736%
+		font 2.2em $mainTitleFont
+		+below(66em)
+			font-size 1.7em
+		+below(47em)
+			font-size 1.5em
+		+below(29em)
+			font-size 1.4em
+		
+	&__description
+		margin 0
+		font-family $subscripFont
+		color lighten($plainTextClr, 40%)
+		+below(66em)
+			width 37rem
+			margin 0 auto
+			font-size .9em
+		+below(47em)
+			width 85%
+		
+	&__form
+		position relative
+		margin-top 2.5%
+		padding-bottom 1em
+		display(flex)
+		flex-direction(normal)
+		flex-direction(row)
+		flex-wrap(wrap)
+		justify-content(center)
+		align-items(center)
+		align-content(center)
+		+below(47em)
+			width 100%
+			margin 1rem auto 5rem
+			
+	&__text
+		position relative
+		order 2
+		margin-right 1.5em
+		padding-left 3em
+		width 29rem
+		height 2.6rem
+		font 0.95em $articleMainFont
+		color $imgCaptionTextClr
+		border none
+		border-radius (@height / 2)
+		background-color #eff0f4
+		transition background-color 0.3s ease-in 0.1s
+		&:hover
+		&:focus
+			outline none
+			background-color darken(#eff0f4, 5%)
+		+below(66em)
+			width 20rem
+		+below(47em)
+			width 70%
+		+below(30em)
+			width 60%
+			
+	&__text	+ .error
+		order 4
+		width 100%
+		transform translate(-5%, 20%)
+		font-size 1.2em
+		color #de482f
+		+below(66em)
+			transform translate(-8%, 20%)
+			font-size 1em
+		+below(55em)
+			transform translate(-10%, 20%)
+		+below(47em)
+			order 3
+			transform translate(0, 20%)
+		+below(29em)
+			font-size .9em
+			
+	&__label
+		order 1
+		position relative
+		width 2rem
+		height 2.625rem
+		&:after
+			addIconFont( '\e806', .56em, 2.5em )
+			z-index 50
+			font-size 1.2em
+			color #b9bcc7
+			
+	&__button
+		order 3
+		width 11.25rem
+		height 2.625rem
+		font 1em $mainTitleFont
+		color #fff
+		border none
+		background-color $subscrBtnClr
+		border-radius (@height / 2)
+		transition all 0.3s ease-in 0.1s
+		cursor pointer
+		&:hover
+			background-color lighten($subscrBtnClr, 25%)
+		&:focus
+		&:active
+			background-color lighten($subscrBtnClr, 25%)
+			box-shadow inset 0 0 0 .05em rgba(#000, .5)
+			outline none
+		+below(47em)
+			position absolute
+			width 40%
+			top 4.5rem
+			left calc(50% - 20%)
+			order 4
+			
+
+			
+		
+
+	
+		

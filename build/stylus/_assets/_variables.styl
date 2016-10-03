@@ -1,0 +1,96 @@
+/*****************************************/
+/*                colors
+/*****************************************/
+
+
+ 			   $headBgClr = #222222    //blocks page-header & page-footer bg color
+ 
+ 		 	  $currLinkBd = #1996fc		 //main nav current link border color
+ 
+ 		  $textLightClr = #fff       //headings & plain font light color
+ 
+ 		  $plainTextClr = #23232c    //primary article font dark color
+ 
+ $imgCaptionTextClr = #96969f    //image caption font color
+ 
+ 			  $extLinkClr = #5499c7    //external links font color
+ 
+					$hoverClr = #fa6648    //elements interactivity color
+
+		 $interestBgClr = #f7f7f9    //block interest-to read bg color
+ 
+ $hvrArticleTextClr = #15b067    //article headings interactivity color
+  
+ 			$textCommClr	=	#585858		 //font color in block comments
+
+		 $footerfontClr = #808080    //font color in page footer
+
+
+/*****************************************/
+/*                 Buttons
+/*****************************************/
+
+ 			$transpSocClr = #90908a    //semi-transparent soc-links bg color
+ 			
+ 				 $fsbBtnClr = #3b5998    //btn facebook bg color
+ 				 
+ 			 $tweetBtnClr = #55acee    //btn twitter bg color
+ 			 
+ 					$vkBtnClr = #426b9a    //btn vk bg color
+ 					
+ 					 $gBtnClr = #de482f    //btn g+ bg color
+ 					 
+ 			$subscrBtnClr = #43cb83    //btn subscribe bg color
+
+
+/*****************************************/
+/*                Fonts                  
+/*****************************************/
+
+$iconFont 					= 0.7em 'font_zocial'
+																	//icon font!
+
+$articleMainFont 		= 'ProbaPro-Regular', Arial, Helvetica, sans-serif
+																	//primary article font-family
+																		
+$mainTitleFont 			= 'MuseoSansCyrl_900', Arial, Helvetica, sans-serif
+																	//article headings font-family 
+																		
+$prefaceFont 				= 'MuseoSansCyrl_500', Arial, Helvetica, sans-serif
+																	//element main-content__preface font-family 
+																		
+$importantFragmentFont = 'MullerBlack', Arial, Helvetica, sans-serif
+																	//element main-content__important font-family 
+																		
+$subscripFont 			= 'Bitter-Italic', Georgia, serif
+																	//element subscription__description font-family 
+
+/*****************************************/
+/*Px-to-Em&Rem converter                 */
+/*****************************************/
+$baseFontSize = 16
+$px = ( 1 / $baseFontSize ) rem
+
+px( val, base = 'none' )
+	if base == 'none'
+		( val / $baseFontSize ) rem
+	else
+		( val / base ) em
+
+
+/*****************************************/
+/*              List of MQ
+/*****************************************/
+ /*
+	+below(75em)    = 75 * 16 = 1200px
+		
+	+below(62.5em)  = 62.5 * 16 = 1000px  |  66em = 1040px / 15.757575
+		
+	+below(55em)    = 55 * 16 = 880px    	|  47em = 740px 
+		
+																				|  37em = 583px 
+
+
+	+retina()
+	
+	*/

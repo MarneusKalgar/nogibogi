@@ -1,0 +1,230 @@
+.comments
+	margin 3.1% auto 5.2%
+	font-family $articleMainFont
+	font-size 1rem
+	+below(37em)
+		padding-bottom 2%
+		
+	&__title
+		box-sizing border-box
+		width 54.6875rem
+		margin auto
+		padding-left 2.3rem
+		font-weight bold
+		font-size 1.5em
+		color $textCommClr
+		+below(66em)
+			width 43.75rem
+		+below(47em)
+			width 34.25rem
+		+below(37em)
+			width 100%
+			padding 0
+			margin 0 auto
+			text-align center
+	
+
+/*********************************************************/
+/*          block sign-in styles
+/*********************************************************/
+.sign-in
+	box-sizing border-box
+	width 54.6875rem
+	height 2em
+	margin 1.4% auto 0
+	padding-left 2.3rem
+	display(flex)
+	flex-direction(normal)
+	flex-direction(row)
+	flex-wrap(wrap)
+	justify-content(flex-start)
+	align-items(center)
+	+below(66em)
+		width 43.75rem
+	+below(47em)
+		width 34.25rem
+		height 4em
+	+below(37em)
+		flex-direction(column)
+		align-items(center)
+		justify-content(space-between)
+		width 100%
+		height auto
+		padding 0 1rem
+		margin-top .5em
+
+
+	&__label
+		margin 0 2.1% 0 0 
+		line-height @height
+		font-size .875em
+		color lighten($textCommClr, 20%)
+		+below(29em)
+			align-self center
+			margin 0
+
+	&__button
+		box-sizing border-box
+		position relative
+		width 9.722222em
+		height @height
+		line-height @height
+		margin-right .7em
+		padding-left 5.5%
+		font .9em $articleMainFont
+		letter-spacing .02em
+		color $textLightClr
+		text-align left
+		border none
+		transition all .3s ease .1s
+		cursor pointer
+		+below(47em)
+			width 6.9em
+		+below(37em)
+			width 9.5em
+			padding-left 3em
+			margin-top 1.2em
+		&:active
+		&:focus
+			outline none
+		addBtnColour(2, $fsbBtnClr)
+		addBtnColour(3, $vkBtnClr)
+		addBtnColour(4, $tweetBtnClr)
+		addBtnColour(5, $gBtnClr)
+		&:nth-child(2):before
+			addIconFont( '\e801', .5em, 1em )
+			font-size 1em
+			+below(47em)
+				left .7em
+		&:nth-child(3):before
+			addIconFont( '\e802', .6em, 1em )
+			font-size 1em
+			+below(47em)
+				left .4em
+		&:nth-child(4):before
+			addIconFont( '\e803', .6em, 1em )
+			font-size 1em
+			+below(47em)
+				left .5em
+		&:nth-child(5):before
+			addIconFont( '\e800', .7em, 1em )
+			font-size .9em
+			+below(47em)
+				left .6em			
+
+
+
+/*********************************************************/
+/*          block add-comment styles
+/*********************************************************/
+.add-comment
+	box-sizing border-box
+	width 54.6875rem
+	margin 2.1% auto 0
+	padding 0 2.3rem
+	+below(66em)
+		width 43.75rem
+		padding-right 0
+	+below(47em)
+		width 34.25rem
+	+below(37em)
+		width 100%
+		padding 0 1rem
+		
+	&__menu
+		height 2em
+		margin 0
+		padding 0
+		display(flex)
+		flex-direction(normal)
+		flex-direction(row)
+		flex-wrap(wrap)
+		justify-content(flex-start)
+		align-items(center)
+		list-style none
+		
+	&__item
+		width 2em
+		height 2em
+		margin-right .5em
+		
+	&__link
+		display block
+		position relative
+		color lighten($textCommClr, 30%)
+		text-decoration none
+		transition all .3s ease .1s
+		&:hover
+		&:active
+		&:focus
+			color darken($textCommClr, 20%)
+	&__item:nth-child(1)
+		.add-comment__link:before
+			addIconFont('\e805', .2em, 0)
+			font-size 1.3em
+	&__item:nth-child(2)
+		.add-comment__link:before			
+			addIconFont('\e804', .1em, .3em )
+			font-size 1.5em
+			+below(29em)
+				left -.7em
+	&__item:nth-child(3)
+		margin 0 0 0 auto
+		width auto
+		line-height 2em
+		.add-comment__link:before			
+			addIconFont('\e80b', .4em, -1.2em )
+			font-size 1em
+			transform rotate(45deg)
+		.add-comment__link:after
+			position absolute
+			content ''
+			bottom .5em
+			left -1.2em
+			height 100%
+			width 1em
+			border-bottom .125em solid lighten($textCommClr, 30%)
+			transition all .3s ease .1s
+		.add-comment__link:hover
+		.add-comment__link:active
+		.add-comment__link:focus
+			&:after
+				border-color darken($textCommClr, 20%)
+				
+	&__form
+		width 100%
+		
+	&__area
+		box-sizing border-box
+		width 100%
+		padding 0
+		border .125em solid lighten($textCommClr, 20%)
+		transition all .3s ease .1s
+		&:hover
+		&:active
+		&:focus
+			border-color $textCommClr
+			outline none
+			
+	&__submit
+		margin 1.25% 0
+		padding 0
+		border none
+		width 8.75em
+		height 2.5em
+		line-height @height
+		font bold 1em $articleMainFont
+		letter-spacing .02em
+		color $textLightClr
+		text-align center
+		background-color #3c5899
+		transition all .3s ease .1s
+		&:focus
+		&:hover
+			outline none
+			background-color darken(#3c5899, 20%)
+		&:active
+			background-color darken(#3c5899, 20%)
+			box-shadow inset 0 0 .3em .1em rgba(#000,.5)
+
+	

@@ -1,0 +1,57 @@
+//block page-footer
+footer.page-footer
+	//-.page-footer-wrapper
+	//block site-map
+	.site-map
+
+
+
+		.site-map__rubrics
+			h3.site-map__title Рубрики
+			.site-map__col
+				+footerLink({ "link": "#", "name": "Начинающим", "text": "Начинающим" })
+				+footerLink({ "link": "#", "name": "Здоровье", "text": "Здоровье" })
+				+footerLink({ "link": "#", "name": "Обувь", "text": "Обувь" })
+				+footerLink({ "link": "#", "name": "Есть вопрос", "text": "Есть вопрос" })
+				+footerLink({ "link": "#", "name": "Истории бегунов", "text": "Истории бегунов" })
+
+			.site-map__col
+				+footerLink({ "link": "#", "name": "Беговые места Киева", "text": "Беговые места Киева" })
+				+footerLink({ "link": "#", "name": "300 дней", "text": "300 дней" })
+				+footerLink({ "link": "#", "name": "Тренировки", "text": "Тренировки" })
+				+footerLink({ "link": "#", "name": "Одежда", "text": "Одежда" })
+				+footerLink({ "link": "#", "name": "Места", "text": "Места" })
+
+			.site-map__col
+				+footerLink({ "link": "#", "name": "Школа бега", "text": "Школа бега" })
+				+footerLink({ "link": "#", "name": "Велоспорт", "text": "Велоспорт" })
+				+footerLink({ "link": "#", "name": "Мотивация", "text": "Мотивация" })
+				+footerLink({ "link": "#", "name": "Гаджеты", "text": "Гаджеты" })
+				+footerLink({ "link": "#", "name": "Интервью", "text": "Интервью" })
+
+			.site-map__col
+				+footerLink({ "link": "#", "name": "Питание", "text": "Питание" })
+				+footerLink({ "link": "#", "name": "Отчеты о соревнованиях", "text": "Отчеты о соревнованиях" })
+				+footerLink({ "link": "#", "name": "Экипировка", "text": "Экипировка" })
+				+footerLink({ "link": "#", "name": "Триатлон", "text": "Триатлон" })
+				+footerLink({ "link": "#", "name": "Женщинам", "text": "Женщинам" })
+
+		.site-map__about
+			h3.site-map__title О проекте
+			.site-map__col
+				+footerLink({ "link": "#", "name": "Зачем это все", "text": "Зачем это все" })
+				+footerLink({ "link": "#", "name": "Контакты", "text": "Контакты" })
+
+		.site-map__we-near
+			h3.site-map__title Мы рядом
+			div.socials-footer
+				a.socials-footer__link(href="https://www.facebook.com/nogibogicomua", target="_blank", title="www.facebook.com/nogibogicomua")
+				a.socials-footer__link(href="https://vk.com/nogibogi", target="_blank", title="vk.com/nogibogi")
+				a.socials-footer__link(href="https://twitter.com/", target="_blank", title="twitter.com/")
+
+			//end block site-map
+
+	.page-footer__additional
+		a.page-footer__logo(href="#", title="http://nogibogi.com/")
+		p.page-footer__slogan &laquo;Ногибоги&raquo; &ndash; это онлайн-журнал о беге, здоровом образе жизни и всём, что с этим связано.
+//end block page-footer

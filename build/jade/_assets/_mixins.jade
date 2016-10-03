@@ -1,0 +1,50 @@
+//- This mixin generates main navigation 
+mixin mainNav(items)
+	//block main navigation
+	nav.main-nav#mainNav
+		ul.top-menu
+			each item in items
+				li.top-menu__item
+					- var linkatts = { 'class': item.class, 'href': item.link }
+					a()&attributes(linkatts)= item.title
+	//end block main navigation
+
+
+//- This mixin generates articles in block interest-to-read
+mixin interestArticle(item)
+	a(class=item.class, href="#", target="_blank", title=item.name)
+		figure.interest-to-read__content
+			img.interest-to-read__article-pic(data-src=item.src, src="img/1.png" alt=item.alt)
+			figcaption.interest-to-read__article-description
+				h3.interest-to-read__article-subtitle= item.subtitle
+				p.interest-to-read__article-info= item.info
+				span.interest-to-read__article-pubdate= item.pubdate
+				span.interest-to-read__article-views= item.views
+
+
+//- This mixin generates simple articles in block front-page
+mixin simpFrontArticle(item)
+	a(class=item.class, href="#", target="_blank", title=item.name)
+		figure.front-page__content
+			img.front-page__article-pic(data-src=item.src, src="img/1.png" alt=item.alt)
+			figcaption.front-page__article-description
+				h3.front-page__article-subtitle= item.subtitle
+				span.front-page__article-pubdate= item.pubdate
+				span.front-page__article-views= item.views
+
+
+//- This mixin generates advanced articles in block front-page
+mixin advFrontArticle(item)
+	a(class=item.class, href="#", target="_blank", title=item.name)
+		figure.front-page__content
+			img.front-page__article-pic(data-src=item.src, src="img/1.png" alt=item.alt)
+			figcaption.front-page__article-description
+				h3.front-page__article-subtitle= item.subtitle
+				p.front-page__article-info= item.info
+				span.front-page__article-pubdate= item.pubdate
+				span.front-page__article-views= item.views
+
+
+//- This mixin generates links in block page footer
+mixin footerLink(item)
+	a.site-map__link(href=item.link, title=item.name, target="_blank")= item.text

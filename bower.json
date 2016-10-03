@@ -1,0 +1,23 @@
+{
+  "name": "nogi_bogi-project",
+  "description": "the nogi_bogi project",
+  "main": "index.html",
+  "authors": [
+    "Igor Chernobay"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "respond": "^1.4.2",
+    "picturefill": "^3.0.2",
+    "html5shiv": "^3.7.3",
+    "jquery-3.0.0.min": "https://code.jquery.com/jquery-3.0.0.min.js"
+  }
+}

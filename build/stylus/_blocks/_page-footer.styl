@@ -1,0 +1,196 @@
+.page-footer
+	margin-top 5.55555%
+	padding-bottom 2.77778%
+	font 1rem $articleMainFont
+	background-color $headBgClr
+	color $textLightClr
+		
+	&__additional
+		width 62.5rem
+		margin 4.4% auto 0
+		padding 0 1.25rem
+		display(flex)
+		flex-direction(normal)
+		flex-direction(row)
+		flex-wrap(wrap)
+		justify-content(space-between)
+		align-items(stretch)
+		+below(66em)
+			box-sizing border-box
+			width 43.75rem
+			height auto
+			padding 0 1rem
+		+below(47em)	
+			width 34.25rem
+			padding 0 3.425rem//0.9rem
+		+below(37em)
+			width 18rem
+			height 7rem
+			margin-top 3%
+			padding 0 1.8rem
+			flex-direction(column)
+			align-items(center)
+			justify-content(flex-start)
+		+below(29em)
+			box-sizing border-box
+			width 100%
+			
+	&__logo
+		display block
+		size 8.8325em 2.125em
+		background url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxOTEuNDEgNDguMDMiPjxkZWZzPjxzdHlsZT4uY2xzLTF7aXNvbGF0aW9uOmlzb2xhdGU7fS5jbHMtMntmaWxsOiNmZmY7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5sb2dvPC90aXRsZT48ZyBpZD0iU2hhcGVfMjMiIGRhdGEtbmFtZT0iU2hhcGUgMjMiIGNsYXNzPSJjbHMtMSI+PGcgaWQ9IlNoYXBlXzIzLTIiIGRhdGEtbmFtZT0iU2hhcGUgMjMiPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTY3MywzOC41NEw2NTguOTQsMjUuMTlhMC4zMywwLjMzLDAsMCwwLS40MywwTDY0Ny44LDMzLjYxYTAuMzIsMC4zMiwwLDAsMCwuMDkuNTZsMTkuNzYsN0w2NTUuNTEsNjUuNzJhMC4zMiwwLjMyLDAsMCwwLC4xLjQsMC4zMywwLjMzLDAsMCwwLC40MiwwbDIzLjI5LTIxYTAuMzIsMC4zMiwwLDAsMCwuMTMtMC4xMmgwbDAuMjEtLjE5YTAuMzIsMC4zMiwwLDAsMCwwLS40OFptLTAuOS45NCwzLjA3LDIuOTItNS43MS0yLDEuMTEtMi4yNFpNNjUwLDMzLjU0bDguNjUtNi44MiwxMSwxMC40Mkw2NjguMjQsNDBaTTY1OSw2MS43MWw5Ljk1LTIwLjE1LDguOTMsMy4xNVpNNjQ1LjU2LDM2LjM0YTAuMzMsMC4zMywwLDAsMC0uMjgtMC4wOSwwLjMyLDAuMzIsMCwwLDAtLjI0LjE2TDYyNC42Myw3Mi42NGEwLjMyLDAuMzIsMCwwLDAsLjA5LjQyLDAuMzMsMC4zMywwLDAsMCwuNDMsMEw2NTQsNDUuNjdsMC4yNC0uMjNhMC4zMiwwLjMyLDAsMCwwLDAtLjQ2Wk02MjksNjcuNjFsMTYuNTgtMjkuNDQsNy4wNyw3Wm03Ni40LTE4LjIyaC04VjQzLjE2SDY5NnYxMy43aDEuMzZWNTAuNmg4djYuMjZoMS4zOFY0My4xNmgtMS4zOHY2LjI0Wm0xMy44MS02LjQ3YTcsNywwLDAsMC03LDcsNyw3LDAsMSwwLDE0LjA4LDBBNi45NCw2Ljk0LDAsMCwwLDcxOS4xNyw0Mi45MlptMCwxMi45YTUuNzMsNS43MywwLDAsMS01LjYzLTUuOTMsNS42Myw1LjYzLDAsMSwxLDExLjI1LDBBNS43Miw1LjcyLDAsMCwxLDcxOS4xNyw1NS44M1ptMTIuNDcsMUg3MzNWNDQuMzdoNS45VjQzLjE2aC03LjI2djEzLjdaTTc0Niw1M2MtMC40Ny42OC0xLjIsMS44OS0xLjIsMS44OWgwczAuMTItMS4xMy4xMi0xLjg1VjQzLjE2aC0xLjM2djEzLjdoMS4zMmw3LTkuODZjMC40Ny0uNjgsMS4xNi0xLjg1LDEuMTYtMS44NWgwUzc1Myw0Ni4yOCw3NTMsNDd2OS44NmgxLjM2VjQzLjE2SDc1M1ptMTkuMzItNC4xM0g3NjJWNDQuMzdoNi40N1Y0My4xNmgtNy44M3YxMy43aDQuNzhBNCw0LDAsMSwwLDc2NS4zMyw0OC44NVptLTAuMDgsNi44SDc2MlY1MC4wNmgzLjIxQTIuNjQsMi42NCwwLDAsMSw3NjgsNTIuODgsMi41NiwyLjU2LDAsMCwxLDc2NS4yNSw1NS42NVptMTUuNTgtMTIuNzNhNyw3LDAsMCwwLTcsNyw3LDcsMCwxLDAsMTQuMDgsMEE2Ljk0LDYuOTQsMCwwLDAsNzgwLjgzLDQyLjkyWm0wLDEyLjlhNS43Myw1LjczLDAsMCwxLTUuNjMtNS45Myw1LjYzLDUuNjMsMCwxLDEsMTEuMjUsMEE1LjcyLDUuNzIsMCwwLDEsNzgwLjgzLDU1LjgzWm0xMi40NywxaDEuMzZWNDQuMzdoNS45VjQzLjE2SDc5My4zdjEzLjdabTIxLjM4LTEzLjctNyw5LjgyYy0wLjQ3LjY4LTEuMiwxLjg5LTEuMiwxLjg5aDBzMC4xMi0xLjEzLjEyLTEuODVWNDMuMTZIODA1LjJ2MTMuN2gxLjMybDctOS44NmMwLjQ3LS42OCwxLjE2LTEuODUsMS4xNi0xLjg1aDBzLTAuMTIsMS4xMy0uMTIsMS44NXY5Ljg2SDgxNlY0My4xNmgtMS4zMloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC02MjQuNTkgLTI1LjA5KSIvPjwvZz48L2c+PC9zdmc+') 0 0 no-repeat
+		background-size contain
+		&:focus
+			outline none
+		+below(47em)
+			display none
+			
+	&__slogan
+		margin 0
+		height 2.125rem
+		line-height @height
+		color $footerfontClr
+		+below(66em)
+			width 70%
+			line-height 1.3
+		+below(47em)
+			width auto
+
+
+
+/*********************************************************/
+/*          block site-map styles
+/*********************************************************/	
+.site-map
+	position relative
+	width 62.5rem
+	margin 0 auto
+	padding 3.125rem 1.25rem 0
+	display(flex)
+	flex-direction(normal)
+	flex-direction(row)
+	flex-wrap(wrap)
+	justify-content(space-between)
+	align-items(flex-srart)
+	+below(66em)
+		box-sizing border-box
+		width 43.75rem
+	+below(47em)
+		width 34.25rem
+		padding 3.125rem 0 0
+	+below(37em)
+		width 18rem	
+		
+	&__rubrics
+		width 77%
+		display(flex)
+		flex-direction(normal)
+		flex-direction(row)
+		flex-wrap(wrap)
+		justify-content(space-between)
+		align-items(stretch)
+		order 1
+		+below(47em)
+			width 80%
+			margin 0 auto
+		
+	&__title
+		width 100%
+		height 2.5em
+		margin 0
+		font-size 0.875em
+		letter-spacing .04em
+		border-bottom 0.12em solid lighten($headBgClr, 5%)
+		
+	&__col
+		margin 1rem 0 0 0
+		width 9.5rem
+		&:last-child
+			margin-right 0
+		+below(66em)
+			width 7.5rem
+		+below(47em)
+			width 40%
+		
+	&__about
+		width 20%
+		height 6.75rem
+		order 2
+		+below(47em)
+			width calc( 27.4rem * 0.4 )
+			margin-top 1.25rem
+			margin-left 3.425rem
+			.site-map__title
+				border-bottom none
+			.site-map__col
+				margin-top 0
+				width 100%
+		+below(37em)
+			width 7em
+			margin-left 1.8rem
+				
+	&__we-near
+		width 20%
+		order 3
+		margin-left auto
+		margin-top -4.15rem
+		+below(47em)
+			width calc( 27.4rem * 0.3 )
+			margin 1.25rem 6.1rem 0 2rem
+		+below(37em)
+			width 35%
+			margin 1.25rem 1.25rem 0 1rem
+		.site-map__title
+			border-bottom none
+	
+	&__link
+		display block
+		height auto
+		line-height 2.2
+		text-decoration none
+		font-size 0.875em
+		color $footerfontClr
+		transition all 0.3s ease 0.1s
+		+below(47em)
+			line-height 2
+		&:hover
+		&:active
+		&:focus
+			outline none
+			color lighten($footerfontClr, 60%)
+
+
+/*********************************************************/
+/*          block socials-footer styles
+/*********************************************************/	
+.socials-footer
+	margin-left -.7em
+	width 100%
+	&__link
+		display inline-block
+		position relative
+		size 1.5em 1.5em
+		margin-right .4em
+		text-decoration none
+		color lighten($headBgClr, 35%)
+		background-color transparent
+		transition all 0.3s ease 0.1s
+		&:nth-child(1):before
+			addIconFont( '\e801', 15%, 30% )
+			font-size 1.2em
+		&:nth-child(2):before
+			addIconFont( '\e802', 15%, 0 )
+			font-size 1.2em
+		&:nth-child(3):before
+			addIconFont( '\e803', 15%, 10% )
+			font-size 1em
+			margin-right 0
+		&:hover
+		&:active
+		&:focus
+			color lighten($headBgClr, 75%)
+		
+			
+			
+
+

@@ -1,0 +1,451 @@
+.page-header
+	width 100%
+	background-color $headBgClr
+	font-size 1rem
+	+below(55em)
+		height 4.6rem
+	+below(37em)
+		height 3.8rem
+	
+/***********************************************************/
+/*   block sticky-header styles (generated while scrolling)    
+/***********************************************************/
+.sticky-header
+	box-sizing border-box
+	display none
+	position fixed
+	width 100%
+	height 3.375em
+	top 0
+	left 0
+	z-index 1000
+	background-color $headBgClr
+	+below(52em)
+		background-color transparent
+		height .25em
+	
+	&__content-clone
+		height 100%
+		width auto
+		padding 0
+		margin 0
+		+below(52em)
+			display none
+		
+		.article-logo
+			float left
+			box-sizing border-box
+			size 5.75em 3.375em
+			margin 0
+			padding .6875em 1.875em 
+			background url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9ItCh0LvQvtC5XzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNTYuMyA0OS4xIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1Ni4zIDQ5LjE7IiB4bWw6c3BhY2U9InByZXNlcnZlIj48c3R5bGUgdHlwZT0idGV4dC9jc3MiPi5zdDB7ZmlsbDojRkZGRkZGO3N0cm9rZTojRkZGRkZGO3N0cm9rZS1taXRlcmxpbWl0OjEwO308L3N0eWxlPjx0aXRsZT5sb2dvPC90aXRsZT48ZyBpZD0iU2hhcGVfMjMiPjxnIGlkPSJTaGFwZV8yMy0yIj48cGF0aCBjbGFzcz0ic3QwIiBkPSJNNDguOSwxNC4xTDM0LjgsMC43Yy0wLjEtMC4xLTAuMy0wLjEtMC40LDBMMjMuNyw5LjFjLTAuMSwwLjEtMC4yLDAuMy0wLjEsMC40YzAsMC4xLDAuMSwwLjEsMC4yLDAuMWwxOS44LDdMMzEuNCw0MS4yYy0wLjEsMC4xLDAsMC4zLDAuMSwwLjRjMC4xLDAuMSwwLjMsMC4xLDAuNCwwbDIzLjMtMjFjMC4xLDAsMC4xLTAuMSwwLjEtMC4xbDAsMGwwLjItMC4yYzAuMS0wLjEsMC4xLTAuMywwLTAuNWMwLDAsMCwwLDAsMEw0OC45LDE0LjF6IE00OCwxNWwzLjEsMi45bC01LjctMmwxLjEtMi4yTDQ4LDE1eiBNMjUuOSw5LjFsOC43LTYuOGwxMSwxMC40bC0xLjQsMi45TDI1LjksOS4xeiBNMzQuOSwzNy4ybDEwLTIwLjJsOC45LDMuMkwzNC45LDM3LjJ6IE0yMS41LDExLjljLTAuMS0wLjEtMC4yLTAuMS0wLjMtMC4xYy0wLjEsMC0wLjIsMC4xLTAuMiwwLjJMMC41LDQ4LjJjLTAuMSwwLjEsMCwwLjMsMC4xLDAuNGMwLjEsMC4xLDAuMywwLjEsMC40LDBsMjguOC0yNy40bDAuMi0wLjJjMC4xLTAuMSwwLjEtMC4zLDAtMC41YzAsMCwwLDAsMCwwTDIxLjUsMTEuOXogTTQuOSw0My4xbDE2LjYtMjkuNGw3LjEsN0w0LjksNDMuMXoiLz48L2c+PC9nPjwvc3ZnPg==') center no-repeat
+			background-size 40%
+		.main-content__title
+			position relative
+			float left
+			width 26.5rem
+			height 3.375rem
+			line-height 3.375rem
+			margin 0
+			padding-left 2rem
+			border-left .12rem solid #393939
+			font-size .875em
+			text-align left
+			&:after
+				content '\2022'
+				position absolute
+				right 0
+				top 0
+				font-size .6em
+				color lighten(#393939, 20%)
+		.about-article__info
+			display table-cell
+			padding 0 0 0 .5em !important
+			height 3.375rem
+			vertical-align middle
+			font .875em $articleMainFont
+			color lighten(#393939, 20%)
+						
+	&__progress-bar
+		position relative
+		bottom 0
+		width 0
+		height .25em
+		background-color #EF4848
+/*************************************************************/
+/*  end block sticky-header styles     
+/*************************************************************/
+
+
+/****************************************/
+/*   block header-wrapper    
+/****************************************/
+.header-wrapper
+	box-sizing border-box
+	width 69.44444444444444%
+	height 100%
+	margin 0 auto
+	padding-top 1.8125em
+	+below(75em)
+		width 85.0%
+	+below(62.5em)
+		width 95%
+	+below(55em)
+		box-sizing border-box
+		padding-top .5%
+		padding-left .5em
+		height 100%
+		width auto
+
+
+/****************************************/
+/*   block user-interations styles      
+/****************************************/
+.user-interactions
+	position relative
+	z-index 0
+	display(flex)
+	flex-direction(normal)
+	flex-direction(row)
+	flex-wrap(wrap)
+	justify-content(space-between)
+	align-content(top)
+	box-sizing border-box
+	padding-bottom 1.1875em
+	border-bottom 0.1em solid lighten($headBgClr, 5%)
+	+below(55em)
+		justify-content(center)
+		padding-bottom 0
+		border-bottom none
+		height 100%
+		width 100%
+
+
+/****************************************/
+/*   block header-socials styles      
+/****************************************/
+.socials-header
+	order 1
+	width 6em
+	margin-top .5%
+	&__link
+		display inline-block
+		position relative
+		size 1.75em 1.75em
+		margin-right 5%
+		text-decoration none
+		color lighten($headBgClr, 75%)
+		background-color lighten($headBgClr, 5%)
+		border-radius 50%
+		transition background-color .3s ease .1s
+		&:last-child
+			margin-right 0
+		&:hover
+		&:active
+		&:focus
+			background-color lighten($headBgClr, 12%)
+			outline none
+		&:nth-child(1):before
+			addIconFont( '\e801', 29%, 39% )
+		&:nth-child(2):before
+			addIconFont( '\e802', 31%, 25% )
+		&:nth-child(3):before
+			addIconFont( '\e803', 30%, 27% )
+	+below(55em)
+		display none
+
+
+/****************************************/
+/*   block article-logo styles      
+/****************************************/
+.article-logo
+	order 2
+	display block
+	size 13rem 3.0625rem
+	margin-top -.41%
+	text-decoration none
+	background url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxOTEuNDEgNDguMDMiPjxkZWZzPjxzdHlsZT4uY2xzLTF7aXNvbGF0aW9uOmlzb2xhdGU7fS5jbHMtMntmaWxsOiNmZmY7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5sb2dvPC90aXRsZT48ZyBpZD0iU2hhcGVfMjMiIGRhdGEtbmFtZT0iU2hhcGUgMjMiIGNsYXNzPSJjbHMtMSI+PGcgaWQ9IlNoYXBlXzIzLTIiIGRhdGEtbmFtZT0iU2hhcGUgMjMiPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTY3MywzOC41NEw2NTguOTQsMjUuMTlhMC4zMywwLjMzLDAsMCwwLS40MywwTDY0Ny44LDMzLjYxYTAuMzIsMC4zMiwwLDAsMCwuMDkuNTZsMTkuNzYsN0w2NTUuNTEsNjUuNzJhMC4zMiwwLjMyLDAsMCwwLC4xLjQsMC4zMywwLjMzLDAsMCwwLC40MiwwbDIzLjI5LTIxYTAuMzIsMC4zMiwwLDAsMCwuMTMtMC4xMmgwbDAuMjEtLjE5YTAuMzIsMC4zMiwwLDAsMCwwLS40OFptLTAuOS45NCwzLjA3LDIuOTItNS43MS0yLDEuMTEtMi4yNFpNNjUwLDMzLjU0bDguNjUtNi44MiwxMSwxMC40Mkw2NjguMjQsNDBaTTY1OSw2MS43MWw5Ljk1LTIwLjE1LDguOTMsMy4xNVpNNjQ1LjU2LDM2LjM0YTAuMzMsMC4zMywwLDAsMC0uMjgtMC4wOSwwLjMyLDAuMzIsMCwwLDAtLjI0LjE2TDYyNC42Myw3Mi42NGEwLjMyLDAuMzIsMCwwLDAsLjA5LjQyLDAuMzMsMC4zMywwLDAsMCwuNDMsMEw2NTQsNDUuNjdsMC4yNC0uMjNhMC4zMiwwLjMyLDAsMCwwLDAtLjQ2Wk02MjksNjcuNjFsMTYuNTgtMjkuNDQsNy4wNyw3Wm03Ni40LTE4LjIyaC04VjQzLjE2SDY5NnYxMy43aDEuMzZWNTAuNmg4djYuMjZoMS4zOFY0My4xNmgtMS4zOHY2LjI0Wm0xMy44MS02LjQ3YTcsNywwLDAsMC03LDcsNyw3LDAsMSwwLDE0LjA4LDBBNi45NCw2Ljk0LDAsMCwwLDcxOS4xNyw0Mi45MlptMCwxMi45YTUuNzMsNS43MywwLDAsMS01LjYzLTUuOTMsNS42Myw1LjYzLDAsMSwxLDExLjI1LDBBNS43Miw1LjcyLDAsMCwxLDcxOS4xNyw1NS44M1ptMTIuNDcsMUg3MzNWNDQuMzdoNS45VjQzLjE2aC03LjI2djEzLjdaTTc0Niw1M2MtMC40Ny42OC0xLjIsMS44OS0xLjIsMS44OWgwczAuMTItMS4xMy4xMi0xLjg1VjQzLjE2aC0xLjM2djEzLjdoMS4zMmw3LTkuODZjMC40Ny0uNjgsMS4xNi0xLjg1LDEuMTYtMS44NWgwUzc1Myw0Ni4yOCw3NTMsNDd2OS44NmgxLjM2VjQzLjE2SDc1M1ptMTkuMzItNC4xM0g3NjJWNDQuMzdoNi40N1Y0My4xNmgtNy44M3YxMy43aDQuNzhBNCw0LDAsMSwwLDc2NS4zMyw0OC44NVptLTAuMDgsNi44SDc2MlY1MC4wNmgzLjIxQTIuNjQsMi42NCwwLDAsMSw3NjgsNTIuODgsMi41NiwyLjU2LDAsMCwxLDc2NS4yNSw1NS42NVptMTUuNTgtMTIuNzNhNyw3LDAsMCwwLTcsNyw3LDcsMCwxLDAsMTQuMDgsMEE2Ljk0LDYuOTQsMCwwLDAsNzgwLjgzLDQyLjkyWm0wLDEyLjlhNS43Myw1LjczLDAsMCwxLTUuNjMtNS45Myw1LjYzLDUuNjMsMCwxLDEsMTEuMjUsMEE1LjcyLDUuNzIsMCwwLDEsNzgwLjgzLDU1LjgzWm0xMi40NywxaDEuMzZWNDQuMzdoNS45VjQzLjE2SDc5My4zdjEzLjdabTIxLjM4LTEzLjctNyw5LjgyYy0wLjQ3LjY4LTEuMiwxLjg5LTEuMiwxLjg5aDBzMC4xMi0xLjEzLjEyLTEuODVWNDMuMTZIODA1LjJ2MTMuN2gxLjMybDctOS44NmMwLjQ3LS42OCwxLjE2LTEuODUsMS4xNi0xLjg1aDBzLTAuMTIsMS4xMy0uMTIsMS44NXY5Ljg2SDgxNlY0My4xNmgtMS4zMloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC02MjQuNTkgLTI1LjA5KSIvPjwvZz48L2c+PC9zdmc+') 0 0 no-repeat
+	background-size contain
+	&:active
+	&:focus
+		outline none
+	+below(55em)
+		order 1
+		align-self center
+	+below(37em)
+		size (.8*12em) (.8*3.0625em)
+
+
+/****************************************/
+/*   block interations styles      
+/****************************************/		
+.interactions
+	order 3
+	margin-top 0.5%
+	
+	&__lang-switcher
+		display inline-block
+		font-family $articleMainFont
+		font-size .75em
+		color lighten($headBgClr, 25%)
+		text-decoration none
+		border-bottom .0625em dotted
+		transition color .3s ease .1s, border-color .3s ease .1s
+		&:hover
+		&:active
+		&:focus
+			color $hoverClr
+			border-color $hoverClr
+			outline none
+			
+	&__sign-in
+		display inline-block
+		width 4.125em
+		height 2.0625em
+		margin-left 2.1825em
+		padding .15em 0 0
+		background-color lighten($headBgClr, 5%)
+		border none
+		font-family $articleMainFont
+		font-size 1em
+		color lighten($headBgClr, 45%)
+		text-align center
+		vertical-align middle
+		border-radius 1em
+		transition background-color .3s ease .1s
+		&:hover
+		&:active
+		&:focus
+			background-color lighten($headBgClr, 12%)
+			outline none
+			cursor pointer
+	+below(55em)
+		display none
+
+
+/****************************************/
+/*         block main-menu styles       */
+/****************************************/
+.main-menu
+	display(flex)
+	flex-direction(normal)
+	flex-direction(row)
+	flex-wrap(wrap)
+	justify-content(space-between)
+	align-content(top)
+
+
+/****************************************/
+/*   block mobile-menu-toggle styles      
+/****************************************/	
+.mobile-menu-toggle
+	visibility hidden
+	order 1
+	align-self center
+	position relative
+	size 1.5rem 1.5rem
+	margin-left 1rem
+	padding 0
+	background $headBgClr
+	border none
+	cursor pointer
+	&:active
+	&:focus
+		outline none
+	
+	&:before
+		addIconFont('\e80a', 0%, 0%)
+		font-size 1.5em
+		color lighten($headBgClr, 45%)
+		cursor pointer
+		transition color .3s ease .1s
+		
+	&:hover:before
+	&:active:before
+	&:focus:before
+		color $hoverClr
+	+below(55em)
+		visibility visible
+		position absolute
+		top 1.6rem
+	+below(37em)
+		top (.8*1.5rem)
+	+below(29em)
+		top 1.25rem
+	
+	&--close:before
+		addIconFont('\e80e', 0%, 15%)
+		font-size 1.5em
+
+
+/****************************************/
+/*   block main-nav styles      
+/****************************************/	
+.main-nav
+	order 2
+	z-index 10
+	width ((638/1000)*100)%
+	margin-left 8%
+	+below(55em)
+		display none
+		position absolute
+		top 4.6rem
+		left -30rem
+		order 2
+		width 15rem
+		height 22rem	
+		margin 0
+		background-color rgba( $headBgClr, .9 )
+	+below(37em)
+		top 3.8rem
+
+
+/****************************************/
+/*   block top-menu styles      
+/****************************************/		
+.top-menu
+	margin 0
+	padding 0
+	display(flex)
+	flex-direction(normal)
+	flex-direction(row)
+	flex-wrap(wrap)
+	justify-content(space-between)
+	align-content(stretch)
+	
+	&--isMobile
+		flex-direction(column)
+
+	&__item
+		margin 0
+		padding 0
+		list-style none
+		
+	&__link
+		display block
+		box-sizing border-box
+		padding 0 .5em
+		height 3.5625em
+		line-height @height
+		text-decoration none
+		font-family $articleMainFont
+		font-size 1em
+		color $textLightClr
+		letter-spacing .03em
+		border-bottom .25em solid transparent
+		transition color .3s ease .1s
+		&:hover
+		&:active
+		&:focus
+			outline none
+			color darken($textLightClr, 45%)
+			
+		&--current
+			border-bottom .25em solid $currLinkBd
+			cursor default
+			&:hover
+			&:active
+			&:focus
+				color $textLightClr
+			+below(55em)
+				border-bottom none
+				border-left .25em solid $currLinkBd
+				
+		&--isIcon
+			position relative
+			&:before
+				content ''
+				position absolute
+				top 31%
+				left -.8em
+				size 1em
+				background url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhcGFfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA2MCA2MCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNjAgNjA7IiB4bWw6c3BhY2U9InByZXNlcnZlIj48c3R5bGUgdHlwZT0idGV4dC9jc3MiPi5zdDB7ZmlsbDojODU4NTg1O308L3N0eWxlPjxnPjxyZWN0IHg9IjIyIiB5PSI0MyIgY2xhc3M9InN0MCIgd2lkdGg9IjciIGhlaWdodD0iNyIvPjxyZWN0IHg9IjIyIiB5PSIyNSIgY2xhc3M9InN0MCIgd2lkdGg9IjciIGhlaWdodD0iNyIvPjxyZWN0IHg9IjIyIiB5PSIzNCIgY2xhc3M9InN0MCIgd2lkdGg9IjciIGhlaWdodD0iNyIvPjxyZWN0IHg9IjEzIiB5PSIzNCIgY2xhc3M9InN0MCIgd2lkdGg9IjciIGhlaWdodD0iNyIvPjxyZWN0IHg9IjEzIiB5PSIyNSIgY2xhc3M9InN0MCIgd2lkdGg9IjciIGhlaWdodD0iNyIvPjxyZWN0IHg9IjEzIiB5PSI0MyIgY2xhc3M9InN0MCIgd2lkdGg9IjciIGhlaWdodD0iNyIvPjxyZWN0IHg9IjQwIiB5PSIyNSIgY2xhc3M9InN0MCIgd2lkdGg9IjciIGhlaWdodD0iNyIvPjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik01Nyw0aC03VjFjMC0wLjYtMC40LTEtMS0xaC03Yy0wLjYsMC0xLDAuNC0xLDF2M0gxOVYxYzAtMC42LTAuNC0xLTEtMWgtN2MtMC42LDAtMSwwLjQtMSwxdjNIM0MyLjQsNCwyLDQuNCwyLDV2MTF2NDNjMCwwLjYsMC40LDEsMSwxaDU0YzAuNiwwLDEtMC40LDEtMVYxNlY1QzU4LDQuNCw1Ny42LDQsNTcsNHogTTQ5LDMydjJ2N3YydjloLTloLTJoLTdoLTJoLTdoLTJoLTl2LTl2LTJ2LTd2LTJ2LTloOWgyaDdoMmg3aDJoOVYzMnogTTU2LDE1SDRWNmg2djNjMCwwLjYsMC40LDEsMSwxaDdjMC42LDAsMS0wLjQsMS0xVjZoMjJ2M2MwLDAuNiwwLjQsMSwxLDFoN2MwLjYsMCwxLTAuNCwxLTFWNmg2VjE1eiIvPjxyZWN0IHg9IjQwIiB5PSIzNCIgY2xhc3M9InN0MCIgd2lkdGg9IjciIGhlaWdodD0iNyIvPjxyZWN0IHg9IjQwIiB5PSI0MyIgY2xhc3M9InN0MCIgd2lkdGg9IjciIGhlaWdodD0iNyIvPjxyZWN0IHg9IjMxIiB5PSI0MyIgY2xhc3M9InN0MCIgd2lkdGg9IjciIGhlaWdodD0iNyIvPjxyZWN0IHg9IjMxIiB5PSIzNCIgY2xhc3M9InN0MCIgd2lkdGg9IjciIGhlaWdodD0iNyIvPjxyZWN0IHg9IjMxIiB5PSIyNSIgY2xhc3M9InN0MCIgd2lkdGg9IjciIGhlaWdodD0iNyIvPjwvZz48L3N2Zz4=')
+				background-size cover
+			&:hover:before
+			&:active:before
+			&:focus:before
+				background url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhcGFfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA2MCA2MCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNjAgNjA7IiB4bWw6c3BhY2U9InByZXNlcnZlIj48c3R5bGUgdHlwZT0idGV4dC9jc3MiPi5zdDB7ZmlsbDojRkE2NjQ4O308L3N0eWxlPjxnPjxyZWN0IHg9IjIyIiB5PSI0MyIgY2xhc3M9InN0MCIgd2lkdGg9IjciIGhlaWdodD0iNyIvPjxyZWN0IHg9IjIyIiB5PSIyNSIgY2xhc3M9InN0MCIgd2lkdGg9IjciIGhlaWdodD0iNyIvPjxyZWN0IHg9IjIyIiB5PSIzNCIgY2xhc3M9InN0MCIgd2lkdGg9IjciIGhlaWdodD0iNyIvPjxyZWN0IHg9IjEzIiB5PSIzNCIgY2xhc3M9InN0MCIgd2lkdGg9IjciIGhlaWdodD0iNyIvPjxyZWN0IHg9IjEzIiB5PSIyNSIgY2xhc3M9InN0MCIgd2lkdGg9IjciIGhlaWdodD0iNyIvPjxyZWN0IHg9IjEzIiB5PSI0MyIgY2xhc3M9InN0MCIgd2lkdGg9IjciIGhlaWdodD0iNyIvPjxyZWN0IHg9IjQwIiB5PSIyNSIgY2xhc3M9InN0MCIgd2lkdGg9IjciIGhlaWdodD0iNyIvPjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik01Nyw0aC03VjFjMC0wLjYtMC40LTEtMS0xaC03Yy0wLjYsMC0xLDAuNC0xLDF2M0gxOVYxYzAtMC42LTAuNC0xLTEtMWgtN2MtMC42LDAtMSwwLjQtMSwxdjNIM0MyLjQsNCwyLDQuNCwyLDV2MTF2NDNjMCwwLjYsMC40LDEsMSwxaDU0YzAuNiwwLDEtMC40LDEtMVYxNlY1QzU4LDQuNCw1Ny42LDQsNTcsNHogTTQ5LDMydjJ2N3YydjloLTloLTJoLTdoLTJoLTdoLTJoLTl2LTl2LTJ2LTd2LTJ2LTloOWgyaDdoMmg3aDJoOVYzMnogTTU2LDE1SDRWNmg2djNjMCwwLjYsMC40LDEsMSwxaDdjMC42LDAsMS0wLjQsMS0xVjZoMjJ2M2MwLDAuNiwwLjQsMSwxLDFoN2MwLjYsMCwxLTAuNCwxLTFWNmg2VjE1eiIvPjxyZWN0IHg9IjQwIiB5PSIzNCIgY2xhc3M9InN0MCIgd2lkdGg9IjciIGhlaWdodD0iNyIvPjxyZWN0IHg9IjQwIiB5PSI0MyIgY2xhc3M9InN0MCIgd2lkdGg9IjciIGhlaWdodD0iNyIvPjxyZWN0IHg9IjMxIiB5PSI0MyIgY2xhc3M9InN0MCIgd2lkdGg9IjciIGhlaWdodD0iNyIvPjxyZWN0IHg9IjMxIiB5PSIzNCIgY2xhc3M9InN0MCIgd2lkdGg9IjciIGhlaWdodD0iNyIvPjxyZWN0IHg9IjMxIiB5PSIyNSIgY2xhc3M9InN0MCIgd2lkdGg9IjciIGhlaWdodD0iNyIvPjwvZz48L3N2Zz4=')
+
+				
+		&--isMobile
+			padding-left 2rem
+			border-bottom none
+			transition all .3s ease .1s
+			&:hover
+			&:active
+			&:focus
+				color $textLightClr
+				padding-left 2.5rem
+				background-color lighten($headBgClr, 20%)
+
+
+/****************************************/
+/*   block header-seach-form styles      
+/****************************************/	
+.header-seach-form
+	position relative
+	order 3
+	align-self center
+	padding 0
+	box-sizing border-box
+	width 10rem
+	height 2rem
+	background-color $headBgClr
+	border none
+	border-radius .8rem
+	+below(55em)
+		display none
+		
+	&--isMobile
+		position absolute
+		display block
+		left 0
+		top 19rem
+		width 13rem
+		margin-left 1rem
+		background-color transparent
+		.header-seach-form__searchbox
+			padding-left 2.4rem
+			padding-right .7rem
+		.header-seach-form__submit-button
+			right 82%
+		
+		
+	&__searchbox
+		box-sizing border-box
+		size 100%
+		padding-left .7rem
+		padding-right 1.6rem
+		border none
+		background-color transparent
+		border-radius .8rem
+		color darken($textLightClr, 30%)
+		transition background-color .3s ease .1s
+		&:hover
+		&:focus
+		&:active
+			outline none
+			background-color lighten($headBgClr, 8%)
+			
+	&__submit-button
+		size 2rem
+		display inline-block
+		position absolute
+		top 0
+		right 0
+		border none
+		background-color transparent
+		cursor pointer
+		font-size 1rem
+		&:before
+			addIconFont( '\e808', 25%, 30% )
+			font-size 1.2em
+			color lighten($headBgClr, 45%)
+			transition color .3s ease .1s
+		&:hover
+		&:focus
+		&:active
+				outline none
+		&:hover:before
+		&:focus:before
+				color $hoverClr

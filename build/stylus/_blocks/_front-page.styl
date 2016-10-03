@@ -1,0 +1,356 @@
+/*********************************************************/
+/*          block front-page styles
+/*********************************************************/
+.front-page-grid
+	display(flex)
+	flex-direction(normal)
+	flex-direction(row)
+	flex-wrap(wrap)
+	justify-content(space-between)
+	align-items(flex-srart)
+	align-content(space-between)
+	width 62.5rem
+	height 68rem
+	margin 2.1% auto 0
+	padding 0 1.25rem
+	+below(66em)
+		width 43.75rem
+		height 48rem
+		padding 0 1rem
+	+below(47em)
+		width 34.25rem
+		height 69.5rem
+		padding 0 .9em
+	+below(37em)
+		width 18.0rem
+		height 119rem
+		margin-right auto
+		margin-left auto
+	+below(29em)
+		padding 0
+
+
+.front-page
+	box-sizing border-box
+	padding-bottom 1.38%
+	margin-top 3.5%
+		
+	&__title
+		margin 0
+		font 2.2em $mainTitleFont
+		line-height 2.2em
+		text-align center
+		+below(66em)
+			font-size 1.7em
+		+below(47em)
+			font-size 1.5em
+		+below(37em)
+			margin 0 auto
+			text-align center
+
+
+	&__article
+		text-decoration none
+		position relative
+		&:last-child
+			margin-right 0
+		&:nth-child(1)
+		&:nth-child(2)
+		&:nth-child(3)
+		&:nth-child(7)	
+			width calc( 60rem / 3 ) // 1000 - 2*20 = 960
+			+below(66em)
+				width calc( 42rem / 3 ) // 
+			+below(47em)
+				width 16.625rem
+			+below(37em)
+				width 100%
+				margin-top 1rem
+				
+		&:nth-child(4)
+		&:nth-child(5)
+			width calc( 61.25rem / 2 ) // 1000 - 20 = 980
+			+below(66em)
+				width calc( 42.875rem / 2 )//21.25rem 
+			+below(47em)
+				width 16.625rem
+			+below(37em)
+				width 100%
+				margin-top 1rem
+				
+		&:nth-child(6)
+			width 41.25rem
+			+below(66em)
+				width 28.875rem
+			+below(47em)
+				width 34.25rem
+			+below(37em)
+				width 100%
+				margin-top 1rem
+	
+
+	&__article
+		&:nth-child(1)
+			order 1
+		&:nth-child(2)
+			order 2
+			+below(47em)
+				order 3
+		&:nth-child(3)
+			order 3
+			+below(47em)
+				order 4
+		&:nth-child(4)
+			order 4
+		&:nth-child(5)
+			order 5
+		&:nth-child(6)
+			order 6
+			+below(47em)
+				order 7
+		&:nth-child(7)
+			order 7
+			+below(47em)
+				order 2
+
+
+	&__article-description
+		position absolute
+		bottom 0
+		left 0
+		padding 0 .9em
+		
+	&__content
+		position relative
+		top 0
+		margin 0
+		padding 0
+		height 100%
+		&:before
+			content ''
+			position absolute
+			top 0
+			left 0
+			width 100%
+			height 100%
+			background-color transparent
+			opacity .2
+			z-index 20
+			transition all .3s ease .1s
+			
+	&__article-pic
+		display block
+		position relative
+		width 100%
+		min-width 100%
+		height 100%
+		z-index 0
+		
+	&__article-subtitle
+		position relative
+		top 0
+		margin 0 0 1.5em 0
+		font 1.1em $mainTitleFont
+		font-weight normal
+		color $textLightClr
+		letter-spacing .02em
+		transition all .3s ease .1s
+		+below(66em)
+			top -0.8em
+		
+	&__article-info
+		position relative
+		height 3.9em
+		width 100%
+		top 0
+		margin 0
+		font-family $articleMainFont
+		line-height 1.35
+		color #95959e
+		transition all .3s ease .1s
+		overflow hidden
+		text-overflow ellipsis
+		
+	&__article-pubdate
+		position absolute
+		top 5.5em
+		left 3em
+		height .9rem
+		line-height @height
+		padding-left .9rem
+		font 0.8em $articleMainFont
+		opacity 0
+		background url('data:image/svg+xml;base64,PHN2ZyBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA2MCI+PHN0eWxlPi5zdDB7ZmlsbDojRkZGRkZGO308L3N0eWxlPjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0yMiA0M2g3djdoLTd6TTIyIDI1aDd2N2gtN3pNMjIgMzRoN3Y3aC03ek0xMyAzNGg3djdoLTd6TTEzIDI1aDd2N2gtN3pNMTMgNDNoN3Y3aC03ek00MCAyNWg3djdoLTd6Ii8+PHBhdGggY2xhc3M9InN0MCIgZD0iTTU3IDRoLTdWMWMwLS42LS40LTEtMS0xaC03Yy0uNiAwLTEgLjQtMSAxdjNIMTlWMWMwLS42LS40LTEtMS0xaC03Yy0uNiAwLTEgLjQtMSAxdjNIM2MtLjYgMC0xIC40LTEgMXY1NGMwIC42LjQgMSAxIDFoNTRjLjYgMCAxLS40IDEtMVY1YzAtLjYtLjQtMS0xLTF6bS04IDI4djIwSDExVjIzaDM4djl6bTctMTdINFY2aDZ2M2MwIC42LjQgMSAxIDFoN2MuNiAwIDEtLjQgMS0xVjZoMjJ2M2MwIC42LjQgMSAxIDFoN2MuNiAwIDEtLjQgMS0xVjZoNnY5eiIvPjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik00MCAzNGg3djdoLTd6TTQwIDQzaDd2N2gtN3pNMzEgNDNoN3Y3aC03ek0zMSAzNGg3djdoLTd6TTMxIDI1aDd2N2gtN3oiLz48L3N2Zz4=') 0 0 no-repeat
+		background-size 13%
+		transition all .3s ease .1s
+			
+	&__article-views
+		position absolute
+		top 5.5em
+		//left 2.8em
+		height .9rem
+		line-height @height
+		padding-left 1.1rem
+		font 0.8em $articleMainFont
+		opacity 0
+		background url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhcGFfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1OS4yIDU5LjIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDU5LjIgNTkuMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+LnN0MHtmaWxsOiNGRkZGRkY7fTwvc3R5bGU+PGc+PHBhdGggY2xhc3M9InN0MCIgZD0iTTUxLjEsMjEuNmMtNS44LTUuOC0xMy40LTguOS0yMS42LTguOXMtMTUuOCwzLjItMjEuNiw4LjlMMCwyOS41bDguMSw4LjFjNS44LDUuOCwxMy40LDguOSwyMS42LDguOXMxNS44LTMuMiwyMS42LTguOWw3LjktNy45TDUxLjEsMjEuNnogTTQ5LjgsMzYuMmMtNS40LDUuNC0xMi41LDguMy0yMC4xLDguM3MtMTQuOC0zLTIwLjEtOC4zbC02LjctNi43TDkuNCwyM2M1LjQtNS40LDEyLjUtOC4zLDIwLjEtOC4zczE0LjgsMywyMC4xLDguM2w2LjcsNi43TDQ5LjgsMzYuMnoiLz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMjkuNiwxNi42Yy03LjIsMC0xMyw1LjgtMTMsMTNzNS44LDEzLDEzLDEzczEzLTUuOCwxMy0xM1MzNi43LDE2LjYsMjkuNiwxNi42eiBNMjkuNiwyNC42Yy0yLjgsMC01LDIuMi01LDVjMCwwLjYtMC40LDEtMSwxcy0xLTAuNC0xLTFjMC0zLjksMy4xLTcsNy03YzAuNiwwLDEsMC40LDEsMVMzMC4xLDI0LjYsMjkuNiwyNC42eiIvPjwvZz48L3N2Zz4=') 0 0 no-repeat
+		background-size 30%
+		transition all .3s ease .1s
+
+
+.front-page__article		
+	&:focus
+	&:hover
+	&:active
+		outline none
+		.front-page__article-subtitle
+			top -0.8em
+			opacity 1
+		.front-page__article-views
+			top 2.9em
+			color $textLightClr
+			opacity 1
+
+/*addind semi-transparet bg*/
+addFrontSemiBg(1, blue)
+addFrontSemiBg(2, #F60086)
+addFrontSemiBg(3, #00B367)
+addFrontSemiBg(4, #F60086)
+addFrontSemiBg(5, #00B367)
+addFrontSemiBg(6, blue)
+addFrontSemiBg(7, #F60086)
+
+
+//styling :nth-child
+.front-page__article:nth-child(1)
+	+below(66em)
+		height 15.75rem
+	+below(47em)
+		height auto
+	.front-page__article-subtitle
+		width 68.1%
+		margin 0 auto 1.5em
+		text-align center
+		+below(66em)
+			width 100%
+			font-size 1em
+	.front-page__article-views
+		left 40%
+		top 5.5rem
+		+below(66em)
+			top 3em
+			color $textLightClr
+	&:active
+	&:hover
+		.front-page__article-views
+			top 3em
+			color $textLightClr
+
+
+.front-page__article:nth-child(2)
+.front-page__article:nth-child(3)
+	.front-page__content:before
+		height 59%
+	.front-page__article-description
+		position relative
+		padding 0
+	.front-page__article-pic
+		height auto
+	.front-page__article-subtitle
+		margin .9em 0
+		color $plainTextClr
+		+below(66em)
+			top 0	
+			height 2.3em
+			margin .4em 0
+			font-size 1em
+			overflow hidden
+			text-overflow ellipsis
+	.front-page__article-info
+		+below(66em)
+			font-size .9em
+			line-height 1.3
+	.front-page__article-pubdate
+		top -.9em
+		z-index 30
+		+below(66em)
+			top -3.2em
+			color $textLightClr
+	.front-page__article-views
+		top -.9em
+		left 12em
+		z-index 30
+		+below(66em)
+			top -3.2em
+			color $textLightClr
+	&:active
+	&:hover
+		.front-page__article-subtitle
+			top 0
+			color $hvrArticleTextClr 
+		.front-page__article-pubdate
+		.front-page__article-views
+			top -3.2em
+			color $textLightClr
+			opacity 1
+
+
+.front-page__article:nth-child(4)
+.front-page__article:nth-child(5)
+	.front-page__article-subtitle
+		width 85%
+		+below(66em)
+			width 97%
+			font-size 1em
+		+below(47em)
+			font-size .75em
+	.front-page__article-views
+		+below(66em)
+			top 2.7em
+			color $textLightClr
+		+below(47em)
+			top 2em
+			
+
+.front-page__article:nth-child(6)
+	.front-page__article-subtitle
+		font-size 2.5em
+		letter-spacing .03rem
+		margin 0 0 .8em .6em
+		+below(66em)
+			width 90%
+			margin-bottom .4em
+			font-size 2em
+		+below(47em)
+			font-size 1.3em
+	.front-page__article-views
+		top 5.2em
+		left 50%
+		+below(66em)
+			display none
+	&:active
+	&:hover
+		.front-page__article-views
+			top 2.2em
+			
+
+.front-page__article:nth-child(7)
+	.front-page__article-subtitle
+		width 90%
+		margin 0 auto 1.5em
+		text-align center
+		+below(66em)
+			width 95%
+			font-size .9em
+			margin 0 auto .6em
+	.front-page__article-views
+		left 40%
+		top 7.3em
+		+below(66em)
+			display none
+	&:active
+	&:hover
+		.front-page__article-views
+			top 4.5em
+		
+		

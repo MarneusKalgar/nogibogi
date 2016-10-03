@@ -1,0 +1,33 @@
+doctype
+html( lang="ru", class="window no-js" )
+	include _assets/_head.jade
+	body.wrapper
+		//-including mixins
+		include _assets/_mixins.jade
+	
+		//-including block "page-header"
+		include _blocks/_page-header.jade
+	
+		//-including block "main-content"
+		include _blocks/_main-content.jade
+	
+		//-including block "interest-to-read"
+		include _blocks/_interest-to-read.jade
+	
+		//-including block "front page"
+		include _blocks/_front-page.jade
+	
+		//-including block "comments"
+		include _blocks/_comments.jade
+	
+		//-including block "page-footer"
+		include _blocks/_page-footer.jade
+		
+		script(async src='js/main.js')
+
+
+
+
+
+
+
